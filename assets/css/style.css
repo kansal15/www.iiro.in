@@ -15486,6 +15486,7 @@ span.select2-selection.select2-selection--single:focus {
   overflow: hidden;
   border-radius: 30px;
   position: relative;
+  max-height: 300px;
 }
 
 .blog-card .blog-img img {
@@ -16697,6 +16698,7 @@ span.select2-selection.select2-selection--single:focus {
           transform: translate(0, 10px);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  width: 60px;
 }
 
 .service-card .box-content {
