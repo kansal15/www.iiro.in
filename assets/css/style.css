@@ -3984,7 +3984,7 @@ a.text-theme:hover,
 }
 
 [data-overlay="theme"]:before {
-  background-color: var(--theme-color);
+  background-color: #4b4b4b;
 }
 
 [data-overlay="theme2"]:before {
@@ -17755,6 +17755,10 @@ span.select2-selection.select2-selection--single:focus {
   margin-bottom: 30px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.feature-card .box-icon img{
+  width: 60px;
 }
 
 .feature-card .box-title {
