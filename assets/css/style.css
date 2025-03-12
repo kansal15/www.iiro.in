@@ -15651,7 +15651,9 @@ span.select2-selection.select2-selection--single:focus {
   overflow: hidden;
   border-radius: 30px;
   position: relative;
-  max-height: 300px;
+  max-height: 220px;
+  align-items: center;
+  display: flex;
 }
 
 .blog-card .blog-img img {
@@ -23024,7 +23026,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .box-thumb{
-  max-height: 250px;
+  max-height: 200px;
   display: flex;
   align-items: center;
   align-content: center;
