@@ -948,59 +948,7 @@
         });
     });
 
-    /*----------- Count pricing ----------*/
-    $(document).on('click', '.donate-amount-button-list li', function() {
-        // Get the clicked button's amount
-        let amount = $(this).data('amount');
-    
-        // Set the value of the input to the clicked amount
-        $('.donate_amount').val(amount);
-    
-        // Remove 'active' class from all buttons
-        $('.donate-amount-button').removeClass('active');
-    
-        // Add 'active' class to the clicked button
-        $(this).addClass('active');
-    });
-    
-    // Optional: Update the active button on input change for custom amount
-    $(document).on('keyup', '.donate_amount', function() {
-        let inputAmount = $(this).val();
-    
-        // Remove 'active' class from all buttons
-        $('.donate-amount-button').removeClass('active');
-    
-        // If the input is a custom amount, you may want to handle it differently
-        if (inputAmount && inputAmount !== '20' && inputAmount !== '50' && inputAmount !== '100' && inputAmount !== '150' && inputAmount !== '200') {
-            // Add a custom class or handle the custom input
-            $('.donate-amount-button:last-child').addClass('active'); // Assuming the last button is for Custom Amount
-        }
-    });
-    
-    /*----------- 00. Right Click Disable ----------*/
-    //   window.addEventListener('contextmenu', function (e) {
-    //     // do something here...
-    //     e.preventDefault();
-    //   }, false);
-
-    /*----------- 00. Inspect Element Disable ----------*/
-    //   document.onkeydown = function (e) {
-    //     if (event.keyCode == 123) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //   }
+   
     
 })(jQuery);
 
