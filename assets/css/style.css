@@ -14580,8 +14580,10 @@ span.select2-selection.select2-selection--single:focus {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  --space-x: 60px;
-  --space-y: 30px;
+          flex-wrap: nowrap;
+          --space-x: 50px;
+          --space-y: 25px;
+          flex-direction: row;
   /* Extra large devices */
   /* Medium Large devices */
   /* Large devices */
@@ -23062,4 +23064,16 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/* new css*/
+
+.section-list li{
+  gap: 5px;
+}
+
+.section-list li h6 i{
+  color: var(--theme-color);
+}
+.section-list li p{
+  margin-bottom: 5px;
+}
+/*# style.css */
