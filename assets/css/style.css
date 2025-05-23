@@ -23076,4 +23076,52 @@ span.select2-selection.select2-selection--single:focus {
 .section-list li p{
   margin-bottom: 5px;
 }
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 7px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+  top: 6px;
+}
+
+ul.timeline>li {
+  margin: 0 0 20px 0;
+  padding-left: 0px;
+  position: relative;
+}
+
+ul.timeline>li:before {
+  content: ' ';
+  background: #ffffff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #f58334;
+  left: -31px;
+  width: 15px;
+  height: 15px;
+  z-index: 400;
+  top: 5px;
+}
+
+.calendar-color {
+  color: var(--theme-color2);
+  margin-right: 10px;
+}
+
+.timeline_heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+}
 /*# style.css */
