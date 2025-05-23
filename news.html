@@ -12,10 +12,16 @@
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:title" content="India Internet Research Organisation" />
+    <meta property="og:description"
+        content="IIRO is a dedicated research and policy think tank focused on studying the Internet ecosystem in India. We work on issues related to digital governance, cybersecurity, online privacy, and emerging internet technologies." />
+    <meta property="og:image" content="https://www.iiro.in/assets/img/logo/logo.png" />
+    <meta property="og:url" content="https://www.iiro.in/" />
+    <meta property="og:type" content="article" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo/favicon32x32.png">
-
     <meta name="theme-color" content="#ffffff">
 
 
@@ -27,11 +33,46 @@
     <!-- Fontawesome Icon -->
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <!-- Magnific Popup -->
-    <!-- <link rel="stylesheet" href="assets/css/magnific-popup.min.css"> -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <!-- Swiper Js -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        
+
+        .marquee-vertical {
+            height: 300px;
+            /* container height */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .marquee-content {
+            display: flex;
+    flex-direction: column;
+    animation: scroll-up 15s linear infinite;
+    bottom: 21px;
+    position: absolute;
+        }
+
+        @keyframes scroll-up {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+
+
+        .marquee-vertical:hover .marquee-content {
+            animation-play-state: paused;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -42,6 +83,7 @@
     <!--********************************
    		Code Start From Here 
 	******************************** -->
+
     <!--==============================
      Preloader
   ==============================-->
@@ -57,8 +99,8 @@ Sidemenu
 ============================== -->
 
     <!--==============================
-    Mobile Menu
-  ============================== -->
+Mobile Menu
+============================== -->
     <div class="th-menu-wrapper">
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
@@ -167,7 +209,8 @@ Header Area
                             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
                             <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.linkedin.com/company/india-internet-research-organisation/"
+                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -255,87 +298,131 @@ Header Area
     <!--==============================
     Breadcumb
 ============================== -->
-    <div class="breadcumb-wrapper " data-bg-src="assets/img/bg/18771.jpg" data-overlay="theme">
+    <div class="breadcumb-wrapper " data-bg-src="assets/img/bg/breadcumb-bg.jpg" data-overlay="theme">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Internet of Things</h1>
+                <h1 class="breadcumb-title">News</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="index.html">Home</a></li>
-                    <li>Internet of Things</li>
+                    <li>News</li>
                 </ul>
             </div>
         </div>
-    </div>
-<!--==============================
-    Section Area
+    </div><!--==============================
+Blog Area
 ==============================-->
-<section class="th-blog-wrapper blog-details space-top space-extra2-bottom">
-    <div class="container">
-        <div class="row gx-40">
-            <div class="col-xxl-12 col-lg-12">
-                <h2 class="blog-title">Internet of Things</h2>
-                <p>The <b>Internet of Things (IoT)</b> is revolutionizing industries and daily life by connecting devices, sensors, and systems to create an intelligent, data-driven ecosystem. At the <b>India Internet Research Foundation (IIRO)</b>, we focus on understanding IoT’s role in India’s digital transformation, identifying challenges, and formulating policy recommendations to ensure secure, efficient, and inclusive IoT adoption.
-                </p>
+    <section class="th-blog-wrapper space-top space-extra-bottom">
+        <div class="container">
+            <div class="row gx-40">
+                <div class="col-xxl-8 col-lg-7">
+                    <div class="th-blog blog-single has-post-thumbnail">
 
-                <div class="mt-30">
-                    <h6>Key Focus Areas</h6>
-                    <div class="checklist section-list">
-                        <ul class="ms-3 mb-4">
-                            <li class="d-flex flex-column">
-                                <h6 class="fs-md mb-0"><i class="fas fa-circle-check" ></i> IoT and Smart Infrastructure
-                                </h6>
-                                <p>We examine how IoT is enhancing urban planning, smart cities, and sustainable development in India. Our research evaluates IoT-powered solutions in traffic management, waste disposal, water conservation, and energy efficiency. </p>
-                            </li>
-
-                            <li class="d-flex flex-column">
-                                <h6 class="fs-md mb-0"><i class="fas fa-circle-check" ></i> IoT in Agriculture</h6>
-                                <p> Agriculture is the backbone of India’s economy, and IoT-driven innovations are transforming farming techniques, precision agriculture, and supply chains. We analyze IoT’s impact on smart irrigation, weather monitoring, soil health management, and agritech solutions to improve productivity.
-                                </p>
-                            </li>
-
-
-                            <li class="d-flex flex-column">
-                                <h6 class="fs-md mb-0"><i class="fas fa-circle-check" ></i> Security and Privacy in IoT
-                                </h6>
-                                <p> With billions of connected devices, cybersecurity risks and data privacy are critical concerns. Our research delves into IoT security frameworks, regulatory policies, and best practices to ensure safe deployment and prevent data breaches.
-                                </p>
-                            </li>
-
-
-                            <li class="d-flex flex-column">
-                                <h6 class="fs-md mb-0"><i class="fas fa-circle-check" ></i> IoT for Healthcare and Public Health
-                                </h6>
-                                <p> From remote patient monitoring to AI-assisted diagnostics, IoT is reshaping healthcare. IIRO studies the role of wearable devices, telemedicine, and real-time health tracking in improving access to quality healthcare, especially in rural areas.
-                                </p>
-                            </li>
-
-                            <li class="d-flex flex-column">
-                                <h6 class="fs-md mb-0"><i class="fas fa-circle-check" ></i> Industrial IoT and Smart Manufacturing</h6>
-                                <p> The Fourth Industrial Revolution is driven by IoT-enabled automation, predictive maintenance, and supply chain optimization. IIRO’s research explores Industry 4.0 adoption in India, evaluating its impact on productivity, cost reduction, and workforce upskilling.
-                                </p>
-                            </li>
-
-                            <li class="d-flex flex-column">
-                                <h6 class="fs-md mb-0"><i class="fas fa-circle-check" ></i> Regulatory and Policy Framework for IoT</h6>
-                                <p> A structured regulatory framework is essential for seamless and secure IoT integration. We provide insights into standards, data governance, and ethical considerations surrounding IoT, ensuring its alignment with national and global policies.
-                                </p>
-                            </li>
-                           
-                        </ul>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="applications-open.html"><i class="fas fa-calendar-days"></i>May 16, 2025</a>
+                            </div>
+                            <h2 class="blog-title"><a href="applications-open.html">Applications Open: DRAPAC24 Digital Rights Fellowship
+                                </a>
+                            </h2>
+                            <p class="blog-text"> EngageMedia is now accepting applications for the DRAPAC24 Digital
+                                Rights Fellowship, supporting participation in the upcoming assembly in Taipei, Taiwan,
+                                on August 18–19, 2025.</p>
+                            <a href="applications-open.html" class="th-btn btn-sm">Read More <i class="fas fa-arrow-up-right ms-2"></i></a>
+                        </div>
                     </div>
-                    <h6>Shaping India’s IoT Future</h6>
-                   <p>IIRO is committed to advancing IoT research, fostering innovation, and developing policy solutions that promote a secure and inclusive IoT ecosystem in India. By bridging the gap between technology, governance, and society, we aim to ensure that IoT contributes meaningfully to India’s digital future.
-                </p>
-                   <p>Blogs on this topic are most welcome. You can mail us at <a href="mailto:contact@iiro.in">contact@iiro.in</a> to share your insights or collaborate on research.
-                   </p>
-                </div>      
+
+                    <div class="th-blog blog-single has-post-thumbnail">
+
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="nixi-internet-governance-internship.html"><i class="fas fa-calendar-days"></i>May 16, 2025</a>
+                            </div>
+                            <h2 class="blog-title"><a href="nixi-internet-governance-internship.html">NIXI Internet Governance Internship – 2nd Cohort</a>
+                            </h2>
+                            <p class="blog-text"> Applications are open for the 2nd cohort of NIXI’s Internet Governance
+                                Internship. Open to Indian citizens interested in internet policy, engineering, and
+                                governance. </p>
+                            <a href="nixi-internet-governance-internship.html" class="th-btn btn-sm">Read More <i class="fas fa-arrow-up-right ms-2"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-xxl-4 col-lg-5">
+                    <aside class="sidebar-area">
+
+                        <div class="widget  ">
+                            <h3 class="widget_title">Recent News</h3>
+
+                            <div style=" position: relative; height: 350px; overflow-y: scroll;">
+                                <ul class="timeline">
+                                    <li>
+
+                                        <a href="#" class="float-right"><i
+                                                class="fas fa-calendar-days calendar-color"></i> <span
+                                                style="font-size: 14px; color: var(--body-color);">23 May, 2025</span>
+                                            <p class="timeline_heading">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing elit.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+
+                                        <a href="#" class="float-right"><i
+                                                class="fas fa-calendar-days calendar-color"></i> <span
+                                                style="font-size: 14px; color: var(--body-color);">23 May, 2025</span>
+                                            <p class="timeline_heading">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing elit.</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="#" class="float-right"><i
+                                                class="fas fa-calendar-days calendar-color"></i> <span
+                                                style="font-size: 14px; color: var(--body-color);">23 May, 2025</span>
+                                            <p class="timeline_heading">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing elit.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+
+                                        <a href="#" class="float-right"><i
+                                                class="fas fa-calendar-days calendar-color"></i> <span
+                                                style="font-size: 14px; color: var(--body-color);">23 May, 2025</span>
+                                            <p class="timeline_heading">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing elit.</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="#" class="float-right"><i
+                                                class="fas fa-calendar-days calendar-color"></i> <span
+                                                style="font-size: 14px; color: var(--body-color);">23 May, 2025</span>
+                                            <p class="timeline_heading">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing elit.</p>
+                                        </a>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="#" class="float-right"><i
+                                                class="fas fa-calendar-days calendar-color"></i> <span
+                                                style="font-size: 14px; color: var(--body-color);">23 May, 2025</span>
+                                            <p class="timeline_heading">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing elit.</p>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-
-    
+    </section>
     <!--==============================
 	Footer Area
 ==============================-->
@@ -372,8 +459,7 @@ Header Area
                         <div class="widget footer-widget">
                             <div class="th-widget-about">
                                 <div class="about-logo">
-                                    <a href="index.html"><img src="assets/img/logo/IIRO-white.png" alt="IIRO"
-                                            style="width: 150px;"></a>
+                                    <a href="index.html"><img src="assets/img/logo/IIRO-white.png" alt="IIRO"></a>
                                 </div>
                                 <p class="about-text"> IIRO is small volunteer team trying to bring the change in the
                                     Internet and Technology world.</p>
@@ -385,10 +471,10 @@ Header Area
                             <h3 class="widget_title">Quick Links</h3>
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
-                                    <li><a href="AboutUs.html">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
                                     <li><a href="#">Our News</a></li>
-                                    <li><a href="artical.html">Interview Articles</a></li>
-                                    <li><a href="policy.html">Privacy policy</a></li>
+                                    <li><a href="#">Our Articles</a></li>
+                                    <li><a href="#">Privacy policy</a></li>
                                     <li><a href="#">Contact Us</a></li>
                                 </ul>
                             </div>
@@ -400,10 +486,10 @@ Header Area
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
                                     <li><a href="#"></a></li>
-                                    <li><a href="research.html">Research Paper</a></li>
-                                    <li><a href="internetofthings.html">Internet Events</a></li>
-                                    <li><a href="technical.html">Technical Innovation</a></li>
-                                    <li><a href="#">Articles Publishing </a></li> 
+                                    <li><a href="#">Research Paper</a></li>
+                                    <li><a href="#">Internet Events</a></li>
+                                    <li><a href="#">Technical Innovation</a></li>
+                                    <li><a href="#">Articles Publishing </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -442,7 +528,8 @@ Header Area
                                     <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                                     <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
                                     <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.linkedin.com/company/india-internet-research-organisation/"
+                                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -455,7 +542,7 @@ Header Area
                 <div class="row justify-content-center gy-3 align-items-center">
                     <div class="col-lg-12">
                         <p class="copyright-text text-center">
-                            <i class="fal fa-copyright"></i> Copyright 2024 - 2025 <a href="index.html">IIRO</a>. All
+                            <i class="fal fa-copyright"></i> Copyright 2025 - 2025 <a href="index.html">IIRO</a>. All
                             Rights Reserved.
                         </p>
                     </div>
@@ -463,6 +550,7 @@ Header Area
             </div>
         </div>
     </footer>
+
 
     <!--********************************
 			Code End  Here 
@@ -476,7 +564,6 @@ Header Area
             </path>
         </svg>
     </div>
-
     <!--==============================
     All Js File
 ============================== -->
