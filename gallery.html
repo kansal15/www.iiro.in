@@ -1,55 +1,533 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <title>nanogallery2 - Gallery with Albums</title>
-  <link href="https://unpkg.com/nanogallery2/dist/css/nanogallery2.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f0f0f0;
-    }
-    #my_nanogallery {
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>IIRO </title>
+    <meta name="author" content="">
+    <meta name="description" content="IIRO">
+    <meta name="keywords" content="IIRO">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:title" content="India Internet Research Organisation" />
+    <meta property="og:description" content="IIRO is a dedicated research and policy think tank focused on studying the Internet ecosystem in India. We work on issues related to digital governance, cybersecurity, online privacy, and emerging internet technologies."/>
+    <meta property="og:image" content="https://www.iiro.in/assets/img/logo/logo.png"/>
+    <meta property="og:url" content="https://www.iiro.in/" />
+    <meta property="og:type" content="article" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo/favicon32x32.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=Nunito:ital,wght@0,200..1000;1,200..1000&amp;display=swap" rel="stylesheet">
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link href="assets/nanogallery2/css/nanogallery2.min.css" rel="stylesheet">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .nanogallery_gallerytheme_custom_nanogallery2 .nGY2GThumbnail{
+            background: #ffffff !important;
+            border-radius: 10px !important;
+        }
+        .nGY2 .nGY2GThumbnailImage{
+            border-radius: 10px;
+        }
+    </style>
+
 </head>
+
 <body>
 
-    
-      <div id="nanogallery2"
-          // gallery configuration
-          data-nanogallery2 = '{ 
-            "thumbnailWidth":   "auto",
-              "thumbnailHeight":  200,
-            "itemsBaseURL":     "https://www.iiro.in/assets/img/gallery/",
-            "galleryTheme":    {
-              "navigationBreadcrumb": { "background": "#008" }
-            },
-            "viewerTheme":      {
-              "background": "#008"
-            }
-          }'
-        >
-        
-        <!-- content of the gallery -->
-        
-        <!-- first album -->
-        <a href="" data-ngkind="album" data-ngid="1" data-ngthumb="INNOG8-IISPAI 2.jpeg">Album A</a>
-        <a href="INNOG8-IISPAI 2.jpeg" data-ngid="10" data-ngalbumid="1" data-ngthumb="INNOG8-IISPAI 2.jpeg">Image 1 / album A</a>
-        <a href="INNOG8-IISPAI 3.jpeg" data-ngid="11" data-ngalbumid="1" data-ngthumb="INNOG8-IISPAI 3.jpeg">Image 2 / album A</a>
-      
-        <!-- second album -->
-        <a href="" data-ngkind="album" data-ngid="2" data-ngthumb="INNOG8-IISPAI 4.jpeg">Album B</a>
-        <a href="INNOG8-IISPAI 4.jpeg" data-ngid="20" data-ngalbumid="2" data-ngthumb="INNOG8-IISPAI 4.jpeg">Image 1</a>
-        <a href="INNOG8-IISPAI 5.jpeg" data-ngid="21" data-ngalbumid="2" data-ngthumb="INNOG8-IISPAI 5.jpeg">Image 2</a>
-        <a href="Multistakeholderism.jpg" data-ngid="22" data-ngalbumid="2" data-ngthumb="Multistakeholderism.jpg">Image 3</a>
-      </div>
-      
-      
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://unpkg.com/nanogallery2/dist/jquery.nanogallery2.min.js"></script>
 
+
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+
+    <!--==============================
+     Preloader
+  ==============================-->
+  <div class="preloader ">
+    <div class="preloader-inner">
+        <span class="loader">
+            IIRO
+            <span class="loading-text">IIRO</span>
+        </span>
+    </div>
+</div> <!--==============================
+        Sidemenu
+    ============================== -->
+    
+        <!--==============================
+        Mobile Menu
+      ============================== -->
+      <div class="th-menu-wrapper">
+        <div class="th-menu-area text-center">
+            <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="assets/img/logo/logo.png" alt="IIRO" style="width: 180px;"></a>
+            </div>
+            <div class="th-mobile-menu">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+    
+                    <li class="menu-item-has-children">
+                        <a href="#">About Us</a>
+                        <ul class="sub-menu">
+                            <li><a href="AboutUs.html">About us</a></li>
+                            <li><a href="iiromembers.html"> IIRO Members</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">What we do</a>
+                        <ul class="sub-menu">
+                            <li><a href="research.html">Research </a></li>
+                            <li><a href="internetofthings.html">Internet of Things(IoTs)</a></li>
+                            <li><a href="dnsworld.html">DNS World</a></li>
+                            <li><a href="technical.html">Technical </a></li>
+                            <li><a href="internetgovernanceworld.html">Internet Governance World</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Resources</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="news.html">News</a></li>
+                                            <li><a href="event.html">Events and Fellowships</a></li>
+                                            <li><a href="policy.html">Policy Documents</a></li>
+                                            <li><a href="directoryofauthors.html">Directory of Authors</a></li>
+                                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Join us</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Membrship</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="">Our gallery</a>
+                        <ul class="sub-menu">
+                            <li><a href="gallery.html">Events photos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="color-scheme-wrap active">
+            <button class="switchIcon"><i class="fa-solid fa-palette"></i></button>
+            <h3 class="color-scheme-wrap-title text-center">Color Switcher</h3>
+            <h4 class="color-scheme-wrap-subtitle text-center">Theme Color</h4>
+            <div class="color-switch-btns">
+                <button data-color="#1A685B"><i class="fa-solid fa-droplet"></i></button>
+                <button data-color="#f34e3a"><i class="fa-solid fa-droplet"></i></button>
+                <button data-color="#FF4857"><i class="fa-solid fa-droplet"></i></button>
+                <button data-color="#3843C1"><i class="fa-solid fa-droplet"></i></button>
+                <button data-color="#FF7E02"><i class="fa-solid fa-droplet"></i></button>
+            </div>
+            <h4 class="color-scheme-wrap-subtitle mt-20 text-center">Secondary Color</h4>
+            <div class="secondary-color-switch-btns">
+                <button data-secondary-color="#FFAC00"><i class="fa-solid fa-droplet"></i></button>
+                <button data-secondary-color="#F41E1E"><i class="fa-solid fa-droplet"></i></button>
+                <button data-secondary-color="#f34e3a"><i class="fa-solid fa-droplet"></i></button>
+                <button data-secondary-color="#FF4857"><i class="fa-solid fa-droplet"></i></button>
+                <button data-secondary-color="#3843C1"><i class="fa-solid fa-droplet"></i></button>
+            </div>
+        </div><!--==============================
+        Header Area
+    ==============================-->
+        <header class="th-header header-default">
+            <div class="menu-top">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
+                        <div class="col-auto d-none d-lg-block">
+                            <div class="header-logo">
+                                <a href="index.html"><img src="assets/img/logo/logo.png" alt="IIRO"
+                                        style="width: 170px;"></a>
+                            </div>
+                        </div>
+                        <div class="col-auto d-none d-md-block">
+                            <div class="info-card-wrap">
+                                <div class="info-card">
+                                    <div class="box-icon">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                        <div class="bg-shape1"
+                                            data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                        <div class="bg-shape2"
+                                            data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                    </div>
+                                    <div class="box-content">
+                                        <p class="box-text">Locate Address:</p>
+                                        <h4 class="box-title"><a href="https://www.google.com/maps">New Delhi, IN</a></h4>
+                                    </div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="box-icon">
+                                        <i class="fal fa-phone"></i>
+                                        <div class="bg-shape1"
+                                            data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                        <div class="bg-shape2"
+                                            data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                    </div>
+                                    <div class="box-content">
+                                        <p class="box-text">Call us any time:</p>
+                                        <h4 class="box-title"><a href="tel:91****">Shall be published soon</a></h4>
+                                    </div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="box-icon">
+                                        <i class="fal fa-envelope-open"></i>
+                                        <div class="bg-shape1"
+                                            data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                        <div class="bg-shape2"
+                                            data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                    </div>
+                                    <div class="box-content">
+                                        <p class="box-text">Email us any time:</p>
+                                        <h4 class="box-title"><a href="mailto:contact@iiro.in">contact@iiro.in</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto header-social-col">
+                            <div class="th-social">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com/company/india-internet-research-organisation/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky-wrapper">
+                <!-- Main Menu Area -->
+                <div class="container">
+                    <div class="menu-area">
+                        <div class="menu-area-wrap">
+                            <div class="col-auto d-inline-block d-lg-none">
+                                <div class="header-logo">
+                                    <a href="index.html"><img src="assets/img/logo/IIRO-white.png" alt="IIRO"
+                                            style="width: 150px;"></a>
+                                </div>
+                            </div>
+                            <nav class="main-menu d-none d-lg-block">
+                                <ul>
+                                    <li> <a href="index.html">Home</a></li>
+    
+                                    <li class="menu-item-has-children">
+                                        <a href="#">About Us</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="AboutUs.html">About us</a></li>
+                                            <li><a href="iiromembers.html"> IIRO Members</a></li>
+                                        </ul>
+                                    </li>
+    
+                                    <li class="menu-item-has-children">
+                                        <a href="#">What we do</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="research.html">Research </a></li>
+                                            <li><a href="internetofthings.html">Internet of Things(IoTs)</a></li>
+                                            <li><a href="dnsworld.html">DNS World</a></li>
+                                            <li><a href="technical.html">Technical </a></li>
+                                            <li><a href="internetgovernanceworld.html">Internet Governance World</a></li>
+                                        </ul>
+                                    </li>
+    
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Resources</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="news.html">News</a></li>
+                                            <li><a href="event.html">Events and Fellowships</a></li>
+                                            <li><a href="policy.html">Policy Documents</a></li>
+                                            <li><a href="directoryofauthors.html">Directory of Authors</a></li>
+                                        </ul>
+                                    </li>
+    
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Join us</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Membrship</a></li>
+                                            <li><a href="#">FAQs</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Our gallery</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="gallery.html">Events photos</a></li>
+                                        </ul>
+                                    </li>
+    
+                                    <li>
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+    
+                        </div>
+    
+                        <div class="header-button">
+    
+                            <button type="button" class="icon-btn th-menu-toggle d-lg-none"><i
+                                    class="far fa-bars"></i></button>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+    
+
+
+    <!--==============================
+    Breadcumb
+============================== -->
+    <div class="breadcumb-wrapper " data-bg-src="assets/img/bg/breadcumb-bg.jpg" data-overlay="theme">
+        <div class="container">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">Gallery</h1>
+                <ul class="breadcumb-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Gallery</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--==============================
+Gallery Area  
+==============================-->
+    <div class="overflow-hidden space">
+        <div class="container">
+            <div class="row">              
+               <div class="col-lg-12">
+                <div id="nanogallery2"
+                // gallery configuration
+                data-nanogallery2 = '{ 
+                    "thumbnailWidth":   "auto",
+                    "thumbnailHeight":  300,
+                    "thumbnailGutterWidth":20,
+                    "thumbnailGutterHeight": 20,
+                    "thumbnailBorderHorizontal": 1,
+                    "thumbnailBorderVertical": 1,
+                  
+                    "thumbnailDisplayTransition": "scaleUp",
+                    "thumbnailDisplayTransitionDuration":  500,  
+                    
+      
+                    "thumbnailAlignment": "fillWidth",
+                    "thumbnailLabel":     { "valign": "bottom", "position": "overImage", "hideIcons": true, "display": true,  "hideIcons": true, "titleFontSize": "1.2em", "align": "center", "titleMultiLine":true, "displayDescription": false },
+      
+                  "itemsBaseURL":     "https://www.iiro.in/assets/img/gallery/",
+                  "galleryTheme":    { "navigationBreadcrumb": { "background": "#097ac3" }  },
+                  "thumbnail": { "background": "#097ac3", "titleShadow" : "", "descriptionShadow" : "none", "titleColor": "#fff", "borderColor": "#717273" },
+                  "viewerTheme": { "background": "#717273" }
+                }'
+              >
+              
+              <!-- content of the gallery -->
+              
+              <!-- first album -->
+              <a href="" data-ngkind="album" data-ngid="1" data-ngthumb="INNOG8-IISPAI 2.jpeg">Album A</a>
+              <a href="INNOG8-IISPAI 2.jpeg" data-ngid="10" data-ngalbumid="1" data-ngthumb="INNOG8-IISPAI 2.jpeg">Image 1</a>
+              <a href="INNOG8-IISPAI 3.jpeg" data-ngid="11" data-ngalbumid="1" data-ngthumb="INNOG8-IISPAI 3.jpeg">Image 2</a>
+            
+              <!-- second album -->
+              <a href="" data-ngkind="album" data-ngid="2" data-ngthumb="INNOG8-IISPAI 4.jpeg">Album B</a>
+              <a href="INNOG8-IISPAI 4.jpeg" data-ngid="20" data-ngalbumid="2" data-ngthumb="INNOG8-IISPAI 4.jpeg">Image 1</a>
+              <a href="INNOG8-IISPAI 5.jpeg" data-ngid="21" data-ngalbumid="2" data-ngthumb="INNOG8-IISPAI 5.jpeg">Image 2</a>
+              <a href="INNOG8-IISPAI.jpeg" data-ngid="22" data-ngalbumid="2" data-ngthumb="INNOG8-IISPAI.jpeg">Image 3</a>
+            </div>
+            
+               </div>
+            </div>
+        </div>
+    </div>
+     <!--==============================
+	Footer Area
+==============================-->
+<footer class="footer-wrapper footer-default" data-bg-src="assets/img/bg/footer-default-bg-mask.png">
+
+    <div class="footer-bg-shape3 shape-mockup d-none" data-bottom="0" data-right="0">
+        <img src="assets/img/shape/footer-bg-shape2.png" alt="img">
+    </div>
+    <div class="footer-top">
+        <div class="container">
+            <div class="subscribe-box">
+                <div class="row gy-40 align-items-center justify-content-center">
+                    <div class="col-xl-6">
+                        <h4 class="subscribe-box_title">Subscribe to Our Newsletter</h4>
+                        <p class="subscribe-box_text">Innovation and Research</p>
+                    </div>
+                    <div class="col-xl-6 col-lg-8">
+                        <form class="newsletter-form">
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Enter Email Address"
+                                    required="">
+                            </div>
+                            <button type="submit" class="th-btn style3"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="widget-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget footer-widget">
+                        <div class="th-widget-about">
+                            <div class="about-logo">
+                                <a href="index.html"><img src="assets/img/logo/IIRO-white.png" alt="IIRO"></a>
+                            </div>
+                            <p class="about-text"> IIRO is small volunteer team trying to bring the change in the
+                                Internet and Technology world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Quick Links</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our News</a></li>
+                                <li><a href="#">Our Articles</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">Collaborate with us</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="#"></a></li>
+                                <li><a href="#">Research Paper</a></li>
+                                <li><a href="#">Internet Events</a></li>
+                                <li><a href="#">Technical Innovation</a></li>
+                                <li><a href="#">Articles Publishing </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget footer-widget">
+                        <div class="th-widget-contact">
+                            <h3 class="widget_title">Contact Us</h3>
+                            <div class="info-card">
+                                <div class="box-icon">
+                                    <i class="fal fa-phone"></i>
+                                    <div class="bg-shape1"
+                                        data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                    <div class="bg-shape2"
+                                        data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                </div>
+                                <div class="box-content">
+                                    <p class="box-text">Call us any time:</p>
+                                    <h4 class="box-title"><a href="tel:991***">Shall be published soon</a></h4>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="box-icon">
+                                    <i class="fal fa-envelope-open"></i>
+                                    <div class="bg-shape1"
+                                        data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                    <div class="bg-shape2"
+                                        data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                </div>
+                                <div class="box-content">
+                                    <p class="box-text">Email us any time:</p>
+                                    <h4 class="box-title"><a href="mailto:contact@iiro.in">contact@iiro.in</a></h4>
+                                </div>
+                            </div>
+                            <div class="th-social style2">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.linkedin.com/company/india-internet-research-organisation/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-wrap">
+        <div class="container">
+            <div class="row justify-content-center gy-3 align-items-center">
+                <div class="col-lg-12">
+                    <p class="copyright-text text-center">
+                        <i class="fal fa-copyright"></i> Copyright 2024 - 2025 <a href="index.html">IIRO</a>. All
+                        Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--********************************
+        Code End  Here 
+******************************** -->
+
+<!-- Scroll To Top -->
+<div class="scroll-top">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+            style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+        </path>
+    </svg>
+</div>
+
+
+    <!--==============================
+    All Js File
+============================== -->
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <!-- Swiper Js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/nanogallery2/jquery.nanogallery2.min.js"></script>
+
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
