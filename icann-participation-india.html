@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>IIRO | How ICANN Policy Gets Made — And Where India Steps In</title>
+    <meta name="author" content="" />
+    <meta name="description" content="A practical guide to ICANN's Policy Development Process and exactly where an Indian student, researcher, or citizen can step into it — from IIRO, India Internet Research Organisation." />
+    <meta name="keywords" content="ICANN, Internet Governance, India, IIRO, Policy Development Process, At-Large, APRALO" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo/favicon32x32.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom Program Styles (enhanced) -->
+    <!-- Page-scoped styles (component isolation, keyed to theme variables) -->
+    <style>
+        :root {
+            --icann-card-radius: 20px;
+            --icann-dot-size: 12px;
+        }
+
+        .stat-card {
+            /* background: var(--white-color, #ffffff);
+            border: 1px solid var(--th-border-color, #D8DDE1);
+            border-radius: var(--icann-card-radius, 20px); */
+            padding: 1.75rem 1.5rem;
+            text-align: center;
+            height: 100%;
+        }
+        .stat-card .stat-num {
+            font-size: 2.1rem;
+            font-weight: 700;
+            color: var(--theme-color, #097ac3);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .stat-card .stat-lbl {
+            font-size: .88rem;
+            color: var(--body-color, #5a5a5a);
+        }
+
+        .quote-block {
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 1.5;
+            color: var(--title-color, #101a2f);
+            border-left: 3px solid var(--theme-color2, #f58334);
+            padding-left: 22px;
+            margin-bottom: 0;
+        }
+
+        .timeline-wrapper .timeline-item::before {
+            box-shadow: 0 0 0 2px var(--theme-color, #097ac3);
+        }
+        .india-note {
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 8px;
+            background: var(--white-color);
+            border: 1px solid var(--theme-color2);
+            border-radius: 6px;
+            padding: 9px 14px;
+            font-size: .85rem;
+            color: var(--body-color, #5a5a5a);
+            margin-top: 6px;
+        }
+        .india-note .dot {
+            width: 8px; height: 8px; border-radius: 50%;
+            background: var(--theme-color2, #f58334);
+            margin-top: 6px; flex: none;
+        }
+
+        .step-num-badge {
+            background: var(--theme-color, #097ac3);
+            color: #fff;
+            font-family: monospace;
+            font-weight: 700;
+            font-size: .8rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            margin-bottom: 14px;
+        }
+        .step-links a {
+            font-size: .82rem;
+            text-decoration: none;
+            color: var(--theme-color, #097ac3);
+            border-bottom: 1px dotted var(--theme-color, #097ac3);
+            margin-right: 14px;
+            display: inline-block;
+            margin-top: 4px;
+        }
+        .step-links a:hover { color: var(--theme-color2, #f58334); border-color: var(--theme-color2, #f58334); }
+
+        .inst-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.14);
+            border-radius: 12px;
+            padding: 22px;
+            height: 100%;
+        }
+        .inst-card .tag2 {
+            font-family: monospace;
+            font-size: .68rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--theme-color2, #f58334);
+        }
+        .inst-card h3 { color: #fbf7ec; font-size: 1.05rem; margin: 8px 0 8px; }
+        .inst-card p { font-size: .88rem; color: rgba(255,255,255,0.72); margin: 0 0 12px; }
+        .inst-card a {
+            font-size: .8rem;
+            color: var(--theme-color2, #f58334);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--theme-color2, #f58334);
+        }
+
+        .rounded-20 { border-radius: 20px; }
+
+        /* ---------- Reveal-on-scroll animation ---------- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .reveal.in { opacity: 1; transform: translateY(0); }
+
+        /* ---------- Icon chips ---------- */
+        .icon-chip {
+            width: 48px; height: 48px;
+            border-radius: 14px;
+            display: inline-flex; align-items: center; justify-content: center;
+            font-size: 1.15rem;
+            color: #fff;
+            margin-bottom: 16px;
+            flex-shrink: 0;
+        }
+        .icon-chip.bg-a { background: linear-gradient(135deg, var(--theme-color, #097ac3), #1aa3e0); }
+        .icon-chip.bg-b { background: linear-gradient(135deg, var(--theme-color2, #f58334), #ffab5c); }
+        .icon-chip.bg-c { background: linear-gradient(135deg, #1A685B, #2fa08c); }
+        .icon-chip.bg-d { background: linear-gradient(135deg, #6a4fd6, #9d85ea); }
+        .icon-chip.round { border-radius: 50%; }
+        .icon-chip.sm { width: 40px; height: 40px; font-size: 1rem; margin-bottom: 0; }
+
+        /* ---------- Stat cards ---------- */
+        .stat-card {
+            transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+            box-shadow: 0 10px 24px -12px rgba(9,122,195,0.08);
+        }
+        .stat-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--theme-color, #097ac3);
+            box-shadow: 0 20px 34px -14px rgba(9,122,195,0.22);
+        }
+        .stat-card .icon-chip { margin: 0 auto 14px; }
+
+        /* ---------- Quote block ---------- */
+        .quote-wrap {
+            position: relative;
+            background: linear-gradient(180deg, rgb(165 165 165 / 14%), rgb(182 182 182 / 4%));
+            border-radius: 20px;
+            padding: 32px 28px 28px;
+        }
+        .quote-wrap i.quote-mark {
+            position: absolute;
+            top: -14px; left: 20px;
+            font-size: 2.4rem;
+            color: var(--theme-color, #097ac3);
+            opacity: .18;
+        }
+
+        /* ---------- Feature / highlight cards ---------- */
+        .feature-card.style2, .program-highlight-card {
+            transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+        }
+        .feature-card.style2:hover, .program-highlight-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .program-highlight-card {
+            border-top: 3px solid transparent;
+        }
+        .program-highlight-card.accent-a { border-top-color: var(--theme-color, #097ac3); }
+        .program-highlight-card.accent-b { border-top-color: var(--theme-color2, #f58334); }
+        .program-highlight-card.accent-c { border-top-color: #1A685B; }
+
+        /* ---------- Timeline ---------- */
+        .timeline-wrapper { box-shadow: 0 20px 44px -20px rgba(16,26,47,0.12); }
+        .timeline-item .timeline-icon {
+            position: absolute;
+            left: 3px;
+            top: -2px;
+            width: 26px; 
+            height: 26px;
+            border-radius: 50%;
+            background: var(--theme-color, #097ac3);
+            color: #fff;
+            display: flex; align-items: center; justify-content: center;
+            font-size: .68rem;
+            font-weight: 700;
+            font-family: monospace;
+            box-shadow: 0 0 0 4px var(--white-color, #fff);
+        }
+        .timeline-item::before { display: none; }
+        .timeline-item { padding-left: 38px; }
+        .timeline-item h6 { font-size: 1.02rem; margin-bottom: 6px; color: var(--title-color, #101a2f); }
+
+        /* ---------- Step cards ---------- */
+        .step-num-badge {
+            transition: transform .3s ease;
+        }
+        .program-highlight-card:hover .step-num-badge { transform: scale(1.08) rotate(-4deg); }
+        .step-num-badge.b-a { background: linear-gradient(135deg, var(--theme-color, #097ac3), #1aa3e0); }
+        .step-num-badge.b-b { background: linear-gradient(135deg, var(--theme-color2, #f58334), #ffab5c); }
+        .step-num-badge.b-c { background: linear-gradient(135deg, #1A685B, #2fa08c); }
+        .step-num-badge.b-d { background: linear-gradient(135deg, #6a4fd6, #9d85ea); }
+        .step-num-badge.b-e { background: linear-gradient(135deg, #c0392b, #e8695c); }
+
+        /* ---------- Institution cards ---------- */
+        .inst-card {
+            transition: transform .3s ease, background .3s ease, border-color .3s ease;
+        }
+        .inst-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(245,131,52,0.5);
+        }
+        .inst-card .icon-chip.sm { background: rgba(245,131,52,0.15); color: var(--theme-color2, #f58334); }
+
+        /* ---------- CTA polish ---------- */
+        .cta-strip .cta-icon {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            background: rgb(0 0 0 / 14%);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 18px;
+        }
+
+        /* ---------- Section eyebrow icon ---------- */
+        .sub-title i { margin-right: 6px; }
+
+        .cards-grid {
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        }
+
+        blockquote:before, .wp-block-quote:before{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!--==============================
+    Preloader
+    ==============================-->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <span class="loader">
+                IIRO
+                <span class="loading-text">IIRO</span>
+            </span>
+        </div>
+    </div>
+
+    <!--==============================
+    Mobile Menu
+    ============================== -->
+    <div class="th-menu-wrapper">
+        <div class="th-menu-area text-center">
+            <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="assets/img/logo/logo.png" alt="IIRO" style="width: 180px" /></a>
+            </div>
+            <div class="th-mobile-menu">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+    
+                    <li class="menu-item-has-children">
+                        <a href="#">About Us</a>
+                        <ul class="sub-menu">
+                            <li><a href="AboutUs.html">About us</a></li>
+                            <li><a href="iiromembers.html"> IIRO Members</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#">What we do</a>
+                      <ul class="sub-menu">
+                          <li><a href="research.html">Research </a></li>
+                          <li><a href="internetofthings.html">Internet of Things(IoTs)</a></li>
+                          <li><a href="dnsworld.html">DNS World</a></li>
+                          <li><a href="technical.html">Technical </a></li>
+                          <!-- <li><a href="internetgovernanceworld.html">Internet Governance World</a></li> -->
+                      </ul>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="#">Internet Governance World</a>
+                    <ul class="sub-menu">
+                      <li><a href="internetgovernanceworld.html">Internet Governance World</a></li>
+                      <li><a href="iiro-engagement.html">IIRO Engagement</a></li>
+                      <li><a href="icann-participation-india.html">Icann Participation India</a></li>
+                  </ul>
+                </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Resources</a>
+                        <ul class="sub-menu">
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="event.html">Events and Fellowships</a></li>
+                            <li><a href="policy.html">Policy Documents</a></li>
+                            <li><a href="directoryofauthors.html">Directory of Authors</a></li>
+                        </ul>
+                    </li>
+    
+                    
+                    <li class="menu-item-has-children">
+                        <a href="#">Join us</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Membrship</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="">Our gallery</a>
+                        <ul class="sub-menu">
+                            <li><a href="gallery.html">Events photos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--==============================
+    Color Scheme Switcher
+    ============================== -->
+    <div class="color-scheme-wrap active">
+        <button class="switchIcon"><i class="fa-solid fa-palette"></i></button>
+        <h3 class="color-scheme-wrap-title text-center">Color Switcher</h3>
+        <h4 class="color-scheme-wrap-subtitle text-center">Theme Color</h4>
+        <div class="color-switch-btns">
+            <button data-color="#1A685B"><i class="fa-solid fa-droplet"></i></button>
+            <button data-color="#f34e3a"><i class="fa-solid fa-droplet"></i></button>
+            <button data-color="#FF4857"><i class="fa-solid fa-droplet"></i></button>
+            <button data-color="#3843C1"><i class="fa-solid fa-droplet"></i></button>
+            <button data-color="#FF7E02"><i class="fa-solid fa-droplet"></i></button>
+        </div>
+        <h4 class="color-scheme-wrap-subtitle mt-20 text-center">Secondary Color</h4>
+        <div class="secondary-color-switch-btns">
+            <button data-secondary-color="#FFAC00"><i class="fa-solid fa-droplet"></i></button>
+            <button data-secondary-color="#F41E1E"><i class="fa-solid fa-droplet"></i></button>
+            <button data-secondary-color="#f34e3a"><i class="fa-solid fa-droplet"></i></button>
+            <button data-secondary-color="#FF4857"><i class="fa-solid fa-droplet"></i></button>
+            <button data-secondary-color="#3843C1"><i class="fa-solid fa-droplet"></i></button>
+        </div>
+    </div>
+
+    <!--==============================
+    Header Area
+    ==============================-->
+    <header class="th-header header-default">
+        <div class="menu-top">
+            <div class="container">
+                <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
+                    <div class="col-auto d-none d-lg-block">
+                        <div class="header-logo">
+                            <a href="index.html"><img src="assets/img/logo/logo.png" alt="IIRO"
+                                    style="width: 170px;"></a>
+                        </div>
+                    </div>
+                    <div class="col-auto d-none d-md-block">
+                        <div class="info-card-wrap">
+                            <div class="info-card">
+                                <div class="box-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                    <div class="bg-shape1"
+                                        data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                    <div class="bg-shape2"
+                                        data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                </div>
+                                <div class="box-content">
+                                    <p class="box-text">Locate Address:</p>
+                                    <h4 class="box-title"><a href="https://www.google.com/maps">New Delhi, IN</a></h4>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="box-icon">
+                                    <i class="fal fa-phone"></i>
+                                    <div class="bg-shape1"
+                                        data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                    <div class="bg-shape2"
+                                        data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                </div>
+                                <div class="box-content">
+                                    <p class="box-text">Call us any time:</p>
+                                    <h4 class="box-title"><a href="tel:91****">Shall be published soon</a></h4>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="box-icon">
+                                    <i class="fal fa-envelope-open"></i>
+                                    <div class="bg-shape1"
+                                        data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                    <div class="bg-shape2"
+                                        data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                </div>
+                                <div class="box-content">
+                                    <p class="box-text">Email us any time:</p>
+                                    <h4 class="box-title"><a href="mailto: connectwithiiro@gmail.com ">
+                                            connectwithiiro@gmail.com </a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto header-social-col">
+                        <div class="th-social">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/company/india-internet-research-organisation/"
+                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-wrapper">
+            <!-- Main Menu Area -->
+            <div class="container">
+                <div class="menu-area">
+                    <div class="menu-area-wrap">
+                        <div class="col-auto d-inline-block d-lg-none">
+                            <div class="header-logo">
+                                <a href="index.html"><img src="assets/img/logo/IIRO-white.png" alt="IIRO"
+                                        style="width: 150px;"></a>
+                            </div>
+                        </div>
+                        <nav class="main-menu d-none d-lg-block">
+                            <ul>
+                                <li> <a href="index.html">Home</a></li>
+    
+                                <li class="menu-item-has-children">
+                                    <a href="#">About Us</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="AboutUs.html">About us</a></li>
+                                        <li><a href="iiromembers.html"> IIRO Members</a></li>
+                                    </ul>
+                                </li>
+    
+                                
+    
+                                <li class="menu-item-has-children">
+                                  <a href="#">What we do</a>
+                                  <ul class="sub-menu">
+                                      <li><a href="research.html">Research </a></li>
+                                      <li><a href="internetofthings.html">Internet of Things(IoTs)</a></li>
+                                      <li><a href="dnsworld.html">DNS World</a></li>
+                                      <li><a href="technical.html">Technical </a></li>
+                                      <!-- <li><a href="internetgovernanceworld.html">Internet Governance World</a></li> -->
+                                  </ul>
+                              </li>
+                              <li>
+                                <a href="#">Internet Governance World</a>
+                                <ul class="sub-menu">
+                                  <li><a href="internetgovernanceworld.html">Internet Governance World</a></li>
+                                  <li><a href="iiro-engagement.html">IIRO Engagement</a></li>
+                                  <li><a href="icann-participation-india.html">Icann Participation India</a></li>
+                              </ul>
+                            </li>
+    
+                                <li class="menu-item-has-children">
+                                    <a href="#">Resources</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="news.html">News</a></li>
+                                        <li><a href="event.html">Events and Fellowships</a></li>
+                                        <li><a href="policy.html">Policy Documents</a></li>
+                                        <li><a href="directoryofauthors.html">Directory of Authors</a></li>
+                                    </ul>
+                                </li>
+    
+                                <li class="menu-item-has-children">
+                                    <a href="#">Join us</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Membrship</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Our gallery</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery.html">Events photos</a></li>
+                                    </ul>
+                                </li>
+    
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+    
+                    </div>
+    
+                    <div class="header-button">
+    
+                        <button type="button" class="icon-btn th-menu-toggle d-lg-none"><i
+                                class="far fa-bars"></i></button>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--==============================
+        Breadcumb
+        ============================== -->
+        <div class="breadcumb-wrapper page-hero" data-bg-src="assets/img/bg/breadcumb-bg.jpg" data-overlay="theme">
+            <div class="container">
+                <div class="breadcumb-content">
+                    <div class="hero-label">IIRO · Internet Governance World</div>
+                    <h1 class="breadcumb-title mt-2">Internet policy isn't written <span>somewhere else</span></h1>
+                    <p class="hero-desc">
+                        It's written where someone shows up. A practical guide to ICANN — how its policies get made,
+                        and exactly where an Indian student, researcher, or citizen can step into that process. First
+                        in a series on participating across the internet governance ecosystem.
+                    </p>
+                    <ul class="breadcumb-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li>ICANN Participation in India</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SNAPSHOT STATS -->
+        <section class="overflow-hidden space-top space-extra-bottom">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-sm-4">
+                        <div class="res-card gap-0 stat-card reveal">
+                            <div class="icon-chip bg-a round"><i class="fas fa-flag-checkered"></i></div>
+                            <div class="stat-num">1998</div>
+                            <div class="stat-lbl">Year ICANN was formed to coordinate the internet's naming and numbering systems</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="res-card gap-0 stat-card reveal">
+                            <div class="icon-chip bg-b round"><i class="fas fa-earth-asia"></i></div>
+                            <div class="stat-num">180+</div>
+                            <div class="stat-lbl">Countries represented across ICANN's multistakeholder community</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="res-card gap-0 stat-card reveal">
+                            <div class="icon-chip bg-c round"><i class="fas fa-users"></i></div>
+                            <div class="stat-num">12</div>
+                            <div class="stat-lbl">Accredited At-Large Structures (ALSes) already active in India</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY IT MATTERS -->
+        <section class="overflow-hidden space" data-overlay="gray" data-opacity="6" style="background-image: url(assets/img/bg/gray-bg2.png);">
+            <div class="container">
+                <div class="row align-items-start g-5">
+                    <div class="col-lg-12 reveal">
+                        <div class="title-area text-center">
+                            <span class="sub-title ">Why it matters</span>
+                            <h2 class="sec-title">Policy-making decides who gets a voice online — before the internet reaches you</h2>
+                        </div>
+                        <div class="quote-wrap">
+                            <i class="fas fa-quote-left quote-mark"></i>
+                            <blockquote class="quote-block">
+                                The rules for domain names, IP addresses, and DNS security aren't handed down by one
+                                government or one company. They're negotiated — and whoever isn't in the room doesn't
+                                get a say.
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row gy-3">
+                            <div class="col-sm-6 col-md-3">
+                                <div class="feature-card style2 p-3 bg-white rounded-20 h-100 reveal">
+                                    <div class="icon-chip bg-a"><i class="fas fa-coins"></i></div>
+                                    <h5 class="box-title">It shapes India's digital economy directly</h5>
+                                    <p class="box-text">Decisions on new domain extensions, DNS abuse mitigation, and IP address allocation affect every Indian business, app, and citizen online.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="feature-card style2 p-3 bg-white rounded-20 h-100 reveal">
+                                    <div class="icon-chip bg-b"><i class="fas fa-scale-unbalanced"></i></div>
+                                    <h5 class="box-title">India is under-represented relative to its user base</h5>
+                                    <p class="box-text">With one of the world's largest internet populations, India's voice in ICANN's working groups is still thin compared to its stake.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="feature-card style2 p-3 bg-white rounded-20 h-100 reveal">
+                                    <div class="icon-chip bg-c"><i class="fas fa-people"></i></div>
+                                    <h5 class="box-title">The multistakeholder model only works if stakeholders show up</h5>
+                                    <p class="box-text">Policies are shaped bottom-up by whoever participates — governments, industry, technical community, academia, and civil society, as equals.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="feature-card style2 p-3 bg-white rounded-20 h-100 reveal">
+                                    <div class="icon-chip bg-d"><i class="fas fa-graduation-cap"></i></div>
+                                    <h5 class="box-title">Public policy engagement is a skill, not a credential</h5>
+                                    <p class="box-text">No law degree or government post is required — informed citizens, researchers, and students can submit comments, join working groups, and be heard.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT ICANN DOES -->
+        <section class="space" data-bg-color="#F8F8F8">
+            <div class="container">
+                <div class="title-area text-center mb-5">
+                    <span class="sub-title">The basics</span>
+                    <h2 class="sec-title">What ICANN actually does — and who does it with</h2>
+                    <p class="sec-text mx-auto">
+                        ICANN (the Internet Corporation for Assigned Names and Numbers) coordinates the internet's
+                        system of unique identifiers — domain names, IP addresses, and the protocols that let any
+                        device find any other device. It doesn't run the internet, but it keeps the address book
+                        consistent worldwide. Its policies are developed through a bottom-up, multistakeholder
+                        process — meaning the following groups each hold a formal seat at the table:
+                    </p>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card program-highlight-card accent-a reveal">
+                            <div class="icon-chip bg-a"><i class="fas fa-globe"></i></div>
+                            <h5>GNSO</h5>
+                            <p>Generic Names Supporting Organization — develops policy for generic top-level domains like .com and .org.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card program-highlight-card accent-a reveal">
+                            <div class="icon-chip bg-a"><i class="fas fa-flag"></i></div>
+                            <h5>ccNSO</h5>
+                            <p>Country-Code Names Supporting Organization — policy for country domains, including India's own .in.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card program-highlight-card accent-b reveal">
+                            <div class="icon-chip bg-b"><i class="fas fa-hand-point-right"></i></div>
+                            <h5>ALAC / At-Large</h5>
+                            <p>The formal voice of individual internet end-users, organized through Regional At-Large Organizations (RALOs) — this is where most individuals enter.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card program-highlight-card accent-c reveal">
+                            <div class="icon-chip bg-c"><i class="fas fa-landmark"></i></div>
+                            <h5>GAC</h5>
+                            <p>Governmental Advisory Committee — where national governments, including India's, advise the ICANN Board on public policy concerns.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card program-highlight-card accent-c reveal">
+                            <div class="icon-chip bg-c"><i class="fas fa-shield-halved"></i></div>
+                            <h5>SSAC &amp; RSSAC</h5>
+                            <p>Security and Root Server System advisory committees — technical guardrails for DNS security and stability.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card program-highlight-card accent-a reveal">
+                            <div class="icon-chip bg-a"><i class="fas fa-gavel"></i></div>
+                            <h5>ICANN Board</h5>
+                            <p>Approves final policy, informed by community recommendations and GAC advice.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POLICY DEVELOPMENT PROCESS -->
+        <section class="space">
+            <div class="container">
+                <div class="row gx-5 gy-5">
+                    <div class="col-lg-5 reveal">
+                        <div class="title-area">
+                            <span class="sub-title before-none">How a policy actually gets made</span>
+                            <h2 class="sec-title">The Policy Development Process — and where India can step in</h2>
+                            <p>Most ICANN policy travels through a defined pipeline, not a closed-door decision. Each stage is a real, documented entry point — not a formality.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 reveal">
+                        <div class="timeline-wrapper bg-smoke2 p-4 rounded-30">
+                            <div class="timeline-item">
+                                <span class="timeline-icon">1</span>
+                                <h6>Issue is identified</h6>
+                                <p>A policy gap or emerging issue (e.g. DNS abuse, new gTLD rounds, WHOIS/registration data) is flagged by the community, staff, or the Board.</p>
+                                <div class="india-note"><span class="dot"></span>Raise emerging issues relevant to India — like multilingual (IDN) domains or DNS abuse targeting Indian users — through your RALO or ALS.</div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-icon">2</span>
+                                <h6>Working group forms</h6>
+                                <p>A cross-community Working Group is chartered to research the issue and draft recommendations. Membership is open — anyone can join most working groups.</p>
+                                <div class="india-note"><span class="dot"></span>Individuals and ALSes from India can join working groups directly through ICANN Join — no prior policy experience required.</div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-icon">3</span>
+                                <h6>Public Comment period</h6>
+                                <p>Draft recommendations are opened for public input — typically for a minimum of 40 days. Anyone, anywhere, can submit a comment.</p>
+                                <div class="india-note"><span class="dot"></span>This is the single easiest way to influence ICANN policy from India — no membership needed, just a submission.</div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-icon">4</span>
+                                <h6>Council review &amp; GAC advice</h6>
+                                <p>The GNSO or ccNSO Council reviews the final recommendations. The Governmental Advisory Committee — where India's government representative sits — offers formal advice to the Board.</p>
+                                <div class="india-note"><span class="dot"></span>India's positions here are shaped by MeitY and DoT — civil society input into government consultations feeds this stage too.</div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-icon">5</span>
+                                <h6>Board adoption &amp; implementation</h6>
+                                <p class="mb-0">The ICANN Board formally adopts the policy, and ICANN org implements it globally — becoming binding on registries and registrars everywhere, including in India.</p>
+                                <div class="india-note"><span class="dot"></span>Implementation reviews are also opened for comment — the pipeline loops back to public input.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+        <!-- ==================== HOW TO PARTICIPATE SECTION ==================== -->
+<section class="overflow-hidden space" style="background-image: url('assets/img/bg/gray-bg2.png')">
+    <div class="container">
+        <div class="title-area text-center mb-5">
+            <div class="sub-title">Concrete Steps</div>
+            <h2>How to actually participate — starting this month</h2>
+        </div>
+
+        <div class="cards-grid">
+            <!-- Action 1 -->
+            <a class="res-card reveal" href="https://www.icann.org/en/public-comment" target="_blank">
+                <span class="res-badge badge-paper"><i class="fas fa-comment-dots"></i> Action 1</span>
+                <h3>Submit a Public Comment</h3>
+                <p>
+                    ICANN's Public Comment page lists every open proceeding — from DNS abuse mitigation to new gTLD rules. Comments are read, summarized, and formally logged as part of the policy record.
+                </p>
+                <span class="res-link">View Open Comments <i class="fas fa-arrow-up-right-from-square"></i></span>
+            </a>
+
+            <!-- Action 2 -->
+            <a class="res-card reveal" href="https://atlarge.icann.org/ralos/apralo" target="_blank">
+                <span class="res-badge badge-course"><i class="fas fa-network-wired"></i> Action 2</span>
+                <h3>Join At-Large through APRALO</h3>
+                <p>
+                    India already has 12 accredited At-Large Structures (ALSes) under APRALO, the Asia-Australasia-Pacific regional organization. You can join an existing Indian ALS, or apply as an unaffiliated individual member.
+                </p>
+                <span class="res-link">Join APRALO <i class="fas fa-arrow-up-right-from-square"></i></span>
+            </a>
+
+            <!-- Action 3 -->
+            <a class="res-card reveal" href="https://www.icann.org/en/beginners/courses-and-learning" target="_blank">
+                <span class="res-badge badge-open"><i class="fas fa-graduation-cap"></i> Action 3</span>
+                <h3>Learn the ropes with ICANN Learn</h3>
+                <p>
+                    ICANN's own "Beginners" programme walks through how internet governance works and how policy is actually written — self-paced, free, and built for newcomers.
+                </p>
+                <span class="res-link">Start Learning <i class="fas fa-arrow-up-right-from-square"></i></span>
+            </a>
+
+            <!-- Action 4 -->
+            <a class="res-card reveal" href="https://www.icann.org/fellowshipprogram" target="_blank">
+                <span class="res-badge badge-book"><i class="fas fa-plane-departure"></i> Action 4</span>
+                <h3>Apply for the ICANN Fellowship</h3>
+                <p>
+                    A funded programme that places newcomers — including many from India — directly inside ICANN meetings, with mentorship and a path into working groups. <strong>ICANN85 was hosted in Mumbai in March 2026</strong>.
+                </p>
+                <span class="res-link">Apply Now <i class="fas fa-arrow-up-right-from-square"></i></span>
+            </a>
+
+            <!-- Action 5 -->
+            <a class="res-card reveal" href="https://community.icann.org/" target="_blank">
+                <span class="res-badge badge-paper"><i class="fas fa-envelope-open-text"></i> Action 5</span>
+                <h3>Track a working group's mailing list</h3>
+                <p>
+                    Every RALO and working group runs an open mailing list where drafts, calls, and decisions are discussed in real time — the lowest-friction way to observe before you speak.
+                </p>
+                <span class="res-link">Browse Community <i class="fas fa-arrow-up-right-from-square"></i></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- INDIA SPOTLIGHT -->
+        <section class="actors-section overflow-hidden space">
+            <div class="container">
+                <div class="title-area text-center mb-5">
+                    <span class="sub-title" style="color: var(--theme-color2, #f58334);">Spotlight</span>
+                    <h2>Public policy in India — where domestic engagement plugs in</h2>
+                    <p class="mx-auto" style="color: rgba(255,255,255,0.6); max-width: 720px;">
+                        ICANN engagement doesn't stand apart from India's own policy process — the two feed each
+                        other. These are the domestic channels where the same instinct to participate applies.
+                    </p>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+                    <div class="col">
+                        <div class="inst-card reveal">
+                            <div class="icon-chip sm round mb-3"><i class="fa-solid fa-building"></i></div>
+                            <div class="tag2">Ministry</div>
+                            <h3>MeitY Public Consultations</h3>
+                            <p>The Ministry of Electronics &amp; IT regularly opens draft rules — from IT intermediary rules to data protection — for public comment, usually 30 days per the Pre-Legislative Consultation Policy.</p>
+                            <a href="https://www.meity.gov.in/content/public-opinion" target="_blank" rel="noopener">meity.gov.in/content/public-opinion</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inst-card reveal">
+                            <div class="icon-chip sm round mb-3"><i class="fas fa-network-wired"></i></div>
+                            <div class="tag2">Registry</div>
+                            <h3>NIXI — India's ccTLD &amp; IXP Operator</h3>
+                            <p>The National Internet Exchange of India manages the .in domain and India's internet exchange points, operating under MeitY.</p>
+                            <a href="https://nixi.in/" target="_blank" rel="noopener">nixi.in</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inst-card reveal">
+                            <div class="icon-chip sm round mb-3"><i class="fas fa-scale-balanced"></i></div>
+                            <div class="tag2">Regulator</div>
+                            <h3>TRAI Consultation Papers</h3>
+                            <p>The Telecom Regulatory Authority of India routinely publishes consultation papers on internet and telecom policy, open for stakeholder comment.</p>
+                            <a href="https://www.trai.gov.in/" target="_blank" rel="noopener">trai.gov.in</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inst-card reveal">
+                            <div class="icon-chip sm round mb-3"><i class="fas fa-comments"></i></div>
+                            <div class="tag2">Forum</div>
+                            <h3>India Internet Governance Forum (IIGF)</h3>
+                            <p>India's national multistakeholder IGF chapter, held annually since 2021 — bringing government, industry, academia, and civil society to the same table.</p>
+                            <a href="https://indiaigf.in/" target="_blank" rel="noopener">indiaigf.in</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inst-card reveal">
+                            <div class="icon-chip sm round mb-3"><i class="fas fa-seedling"></i></div>
+                            <div class="tag2">Fellowship</div>
+                            <h3>Youth IGF India</h3>
+                            <p>A capacity-building fellowship for young people to research and publish on internet governance and digital policy — a strong on-ramp before ICANN or IGF participation.</p>
+                            <a href="https://youthigf.in/" target="_blank" rel="noopener">youthigf.in</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inst-card reveal">
+                            <div class="icon-chip sm round mb-3"><i class="fas fa-laptop-code"></i></div>
+                            <div class="tag2">Portal</div>
+                            <h3>MyGov.in</h3>
+                            <p>The Government of India's citizen engagement platform, where several ministries — including MeitY — post consultations and surveys open to the public.</p>
+                            <a href="https://www.mygov.in/" target="_blank" rel="noopener">mygov.in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA STRIP -->
+        <section class="cta-strip overflow-hidden space">
+            <div class="container text-center reveal">
+                <div class="cta-icon"><i class="fas fa-paper-plane"></i></div>
+                <h3 class="mb-3">Ready to send your first comment?</h3>
+                <p class="mx-auto mb-2" style="max-width: 560px;">
+                    IIRO helps first-time participants find the right proceeding, draft a submission, and understand
+                    what happens next. Write in, or bring your research to our community.
+                </p>
+                <p class="mx-auto mb-4" style="max-width: 560px; opacity: .75; font-size: .88rem;">
+                    Next in this series: participating in the IETF, IGF, and IEEE.
+                </p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="mailto:connectwithiiro@gmail.com" class="th-btn"><i class="fas fa-envelope"></i> Write to IIRO</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScigCKS1s6XucSm8-cDqa-aAORpvBEIlDYGchBIOKdnxoo5ug/viewform" target="_blank" class="th-btn th-btn-outline"><i class="fas fa-user-plus"></i> Join as Volunteer</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==============================
+    Footer Area
+    ==============================-->
+    <footer class="footer-wrapper footer-default" data-bg-src="assets/img/bg/footer-default-bg-mask.png">
+        <div class="footer-bg-shape3 shape-mockup d-none" data-bottom="0" data-right="0">
+            <img src="assets/img/shape/footer-bg-shape2.png" alt="img" />
+        </div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="subscribe-box">
+                    <div class="row gy-40 align-items-center justify-content-center">
+                        <div class="col-xl-6">
+                            <h4 class="subscribe-box_title">Subscribe to Our Newsletter</h4>
+                            <p class="subscribe-box_text">Innovation and Research</p>
+                        </div>
+                        <div class="col-xl-6 col-lg-8">
+                            <form class="newsletter-form">
+                                <div class="form-group">
+                                    <input class="form-control" type="email" placeholder="Enter Email Address" required="" />
+                                </div>
+                                <button type="submit" class="th-btn style3">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget footer-widget">
+                            <div class="th-widget-about">
+                                <div class="about-logo">
+                                    <a href="index.html"><img src="assets/img/logo/IIRO-white.png" alt="IIRO" style="width: 150px" /></a>
+                                </div>
+                                <p class="about-text">
+                                    IIRO is small volunteer team trying to bring the change in the Internet and
+                                    Technology world.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-auto">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">Quick Links</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="AboutUs.html">About Us</a></li>
+                                    <li><a href="#">Our News</a></li>
+                                    <li><a href="artical.html">Interview Articles</a></li>
+                                    <li><a href="policy.html">Privacy policy</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-auto">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title">Collaborate with us</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="internetgovernanceworld.html">Internet Governance World</a></li>
+                                    <li><a href="research.html">Research Paper</a></li>
+                                    <li><a href="internetofthings.html">Internet Events</a></li>
+                                    <li><a href="technical.html">Technical Innovation</a></li>
+                                    <li><a href="#">Articles Publishing </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget footer-widget">
+                            <div class="th-widget-contact">
+                                <h3 class="widget_title">Contact Us</h3>
+                                <div class="info-card">
+                                    <div class="box-icon">
+                                        <i class="fal fa-phone"></i>
+                                        <div class="bg-shape1" data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                        <div class="bg-shape2" data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                    </div>
+                                    <div class="box-content">
+                                        <p class="box-text">Call us any time:</p>
+                                        <h4 class="box-title"><a href="tel:991***">Shall be published soon</a></h4>
+                                    </div>
+                                </div>
+                                <div class="info-card">
+                                    <div class="box-icon">
+                                        <i class="fal fa-envelope-open"></i>
+                                        <div class="bg-shape1" data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                        <div class="bg-shape2" data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"></div>
+                                    </div>
+                                    <div class="box-content">
+                                        <p class="box-text">Email us any time:</p>
+                                        <h4 class="box-title">
+                                            <a href="mailto: connectwithiiro@gmail.com ">
+                                                connectwithiiro@gmail.com
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="th-social style2">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.linkedin.com/company/india-internet-research-organisation/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row justify-content-center gy-3 align-items-center">
+                    <div class="col-lg-12">
+                        <p class="copyright-text text-center">
+                            <i class="fal fa-copyright"></i> Copyright 2026 <a href="index.html">IIRO</a>. All
+                            Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top -->
+    <div class="scroll-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path
+                d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="
+                    transition: stroke-dashoffset 10ms linear 0s;
+                    stroke-dasharray: 307.919, 307.919;
+                    stroke-dashoffset: 307.919;
+                "
+            ></path>
+        </svg>
+    </div>
+
+    <!--==============================
+    All Js File
+============================== -->
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <!-- Swiper Js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Reveal Animation (lightweight, mirrors other rebuilt pages) -->
+    <script>
+        (function () {
+            var revealElements = document.querySelectorAll(".reveal");
+            var observer = new IntersectionObserver(
+                function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) entry.target.classList.add("in");
+                    });
+                },
+                { threshold: 0.1 }
+            );
+            revealElements.forEach(function (el) {
+                observer.observe(el);
+            });
+        })();
+    </script>
+</body>
+</html>
