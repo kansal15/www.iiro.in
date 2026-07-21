@@ -266,11 +266,11 @@
         });
     }
     
-    $("#myHead").load("../../include/header.html", function () {
+    $("#myHead").load("header.html", function () {
         initMasks();
     });
     
-    $("#myFooter").load("../../include/footer.html", function () {
+    $("#myFooter").load("footer.html", function () {
         initMasks();
     });
     

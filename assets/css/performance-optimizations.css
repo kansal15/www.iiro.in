@@ -1,0 +1,7 @@
+/* Performance optimizations added by the website optimizer. */
+@media (min-width: 768px) {
+  section:not(.hero):not(.banner) {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 700px;
+  }
+}
