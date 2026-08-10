@@ -31,7 +31,8 @@
         <link rel="stylesheet" href="assets/css/style.css" />
 
        
-    </head>
+        <link rel="stylesheet" href="assets/css/performance-optimizations.css">
+</head>
     <body>
         <!--********************************
    		Code Start From Here 
@@ -568,7 +569,22 @@ All Js File
         <script>
             $('#myHead').load('include/header.html');
             $('#myFooter').load('include/footer.html');
-        </script>
+        
+                (function () {
+                    var revealElements = document.querySelectorAll(".reveal");
+                    var observer = new IntersectionObserver(
+                        function (entries) {
+                            entries.forEach(function (entry) {
+                                if (entry.isIntersecting) entry.target.classList.add("in");
+                            });
+                        },
+                        { threshold: 0.1 }
+                    );
+                    revealElements.forEach(function (el) {
+                        observer.observe(el);
+                    });
+                })();
+            </script>
         <!-- Swiper Js -->
         <script src="assets/js/swiper-bundle.min.js"></script>
         <!-- Bootstrap -->
