@@ -28,7 +28,243 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Custom Program Styles (enhanced) -->
     <!-- Page-scoped styles (component isolation, keyed to theme variables) -->
-   
+    <style>
+        :root {
+            --icann-card-radius: 20px;
+            --icann-dot-size: 12px;
+        }
+
+        .stat-card {
+            /* background: var(--white-color, #ffffff);
+            border: 1px solid var(--th-border-color, #D8DDE1);
+            border-radius: var(--icann-card-radius, 20px); */
+            padding: 1.75rem 1.5rem;
+            text-align: center;
+            height: 100%;
+        }
+        .stat-card .stat-num {
+            font-size: 2.1rem;
+            font-weight: 700;
+            color: var(--theme-color, #097ac3);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .stat-card .stat-lbl {
+            font-size: .88rem;
+            color: var(--body-color, #5a5a5a);
+        }
+
+        .quote-block {
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 1.5;
+            color: var(--title-color, #101a2f);
+            border-left: 3px solid var(--theme-color2, #f58334);
+            padding-left: 22px;
+            margin-bottom: 0;
+        }
+
+        .timeline-wrapper .timeline-item::before {
+            box-shadow: 0 0 0 2px var(--theme-color, #097ac3);
+        }
+        .india-note {
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 8px;
+            background: var(--white-color);
+            border: 1px solid var(--theme-color2);
+            border-radius: 6px;
+            padding: 9px 14px;
+            font-size: .85rem;
+            color: var(--body-color, #5a5a5a);
+            margin-top: 6px;
+        }
+        .india-note .dot {
+            width: 8px; height: 8px; border-radius: 50%;
+            background: var(--theme-color2, #f58334);
+            margin-top: 6px; flex: none;
+        }
+
+        .step-num-badge {
+            background: var(--theme-color, #097ac3);
+            color: #fff;
+            font-family: monospace;
+            font-weight: 700;
+            font-size: .8rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            margin-bottom: 14px;
+        }
+        .step-links a {
+            font-size: .82rem;
+            text-decoration: none;
+            color: var(--theme-color, #097ac3);
+            border-bottom: 1px dotted var(--theme-color, #097ac3);
+            margin-right: 14px;
+            display: inline-block;
+            margin-top: 4px;
+        }
+        .step-links a:hover { color: var(--theme-color2, #f58334); border-color: var(--theme-color2, #f58334); }
+
+        .inst-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.14);
+            border-radius: 12px;
+            padding: 22px;
+            height: 100%;
+        }
+        .inst-card .tag2 {
+            font-family: monospace;
+            font-size: .68rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--theme-color2, #f58334);
+        }
+        .inst-card h3 { color: #fbf7ec; font-size: 1.05rem; margin: 8px 0 8px; }
+        .inst-card p { font-size: .88rem; color: rgba(255,255,255,0.72); margin: 0 0 12px; }
+        .inst-card a {
+            font-size: .8rem;
+            color: var(--theme-color2, #f58334);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--theme-color2, #f58334);
+        }
+
+        .rounded-20 { border-radius: 20px; }
+
+        /* ---------- Reveal-on-scroll animation ---------- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .reveal.in { opacity: 1; transform: translateY(0); }
+
+        /* ---------- Icon chips ---------- */
+        .icon-chip {
+            width: 48px; height: 48px;
+            border-radius: 14px;
+            display: inline-flex; align-items: center; justify-content: center;
+            font-size: 1.15rem;
+            color: #fff;
+            margin-bottom: 16px;
+            flex-shrink: 0;
+        }
+        .icon-chip.bg-a { background: linear-gradient(135deg, var(--theme-color, #097ac3), #1aa3e0); }
+        .icon-chip.bg-b { background: linear-gradient(135deg, var(--theme-color2, #f58334), #ffab5c); }
+        .icon-chip.bg-c { background: linear-gradient(135deg, #1A685B, #2fa08c); }
+        .icon-chip.bg-d { background: linear-gradient(135deg, #6a4fd6, #9d85ea); }
+        .icon-chip.round { border-radius: 50%; }
+        .icon-chip.sm { width: 40px; height: 40px; font-size: 1rem; margin-bottom: 0; }
+
+        /* ---------- Stat cards ---------- */
+        .stat-card {
+            transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+            box-shadow: 0 10px 24px -12px rgba(9,122,195,0.08);
+        }
+        .stat-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--theme-color, #097ac3);
+            box-shadow: 0 20px 34px -14px rgba(9,122,195,0.22);
+        }
+        .stat-card .icon-chip { margin: 0 auto 14px; }
+
+        /* ---------- Quote block ---------- */
+        .quote-wrap {
+            position: relative;
+            background: linear-gradient(180deg, rgb(165 165 165 / 14%), rgb(182 182 182 / 4%));
+            border-radius: 20px;
+            padding: 32px 28px 28px;
+        }
+        .quote-wrap i.quote-mark {
+            position: absolute;
+            top: -14px; left: 20px;
+            font-size: 2.4rem;
+            color: var(--theme-color, #097ac3);
+            opacity: .18;
+        }
+
+        /* ---------- Feature / highlight cards ---------- */
+        .feature-card.style2, .program-highlight-card {
+            transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+        }
+        .feature-card.style2:hover, .program-highlight-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .program-highlight-card {
+            border-top: 3px solid transparent;
+        }
+        .program-highlight-card.accent-a { border-top-color: var(--theme-color, #097ac3); }
+        .program-highlight-card.accent-b { border-top-color: var(--theme-color2, #f58334); }
+        .program-highlight-card.accent-c { border-top-color: #1A685B; }
+
+        /* ---------- Timeline ---------- */
+        .timeline-wrapper { box-shadow: 0 20px 44px -20px rgba(16,26,47,0.12); }
+        .timeline-item .timeline-icon {
+            position: absolute;
+            left: 3px;
+            top: -2px;
+            width: 26px; 
+            height: 26px;
+            border-radius: 50%;
+            background: var(--theme-color, #097ac3);
+            color: #fff;
+            display: flex; align-items: center; justify-content: center;
+            font-size: .68rem;
+            font-weight: 700;
+            font-family: monospace;
+            box-shadow: 0 0 0 4px var(--white-color, #fff);
+        }
+        .timeline-item::before { display: none; }
+        .timeline-item { padding-left: 38px; }
+        .timeline-item h6 { font-size: 1.02rem; margin-bottom: 6px; color: var(--title-color, #101a2f); }
+
+        /* ---------- Step cards ---------- */
+        .step-num-badge {
+            transition: transform .3s ease;
+        }
+        .program-highlight-card:hover .step-num-badge { transform: scale(1.08) rotate(-4deg); }
+        .step-num-badge.b-a { background: linear-gradient(135deg, var(--theme-color, #097ac3), #1aa3e0); }
+        .step-num-badge.b-b { background: linear-gradient(135deg, var(--theme-color2, #f58334), #ffab5c); }
+        .step-num-badge.b-c { background: linear-gradient(135deg, #1A685B, #2fa08c); }
+        .step-num-badge.b-d { background: linear-gradient(135deg, #6a4fd6, #9d85ea); }
+        .step-num-badge.b-e { background: linear-gradient(135deg, #c0392b, #e8695c); }
+
+        /* ---------- Institution cards ---------- */
+        .inst-card {
+            transition: transform .3s ease, background .3s ease, border-color .3s ease;
+        }
+        .inst-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(245,131,52,0.5);
+        }
+        .inst-card .icon-chip.sm { background: rgba(245,131,52,0.15); color: var(--theme-color2, #f58334); }
+
+        /* ---------- CTA polish ---------- */
+        .cta-strip .cta-icon {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            background: rgb(0 0 0 / 14%);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 18px;
+        }
+
+        /* ---------- Section eyebrow icon ---------- */
+        .sub-title i { margin-right: 6px; }
+
+        .cards-grid {
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        }
+
+        blockquote:before, .wp-block-quote:before{
+            display: none;
+        }
+    </style>
     <link rel="stylesheet" href="assets/css/performance-optimizations.css">
 </head>
 <body>
