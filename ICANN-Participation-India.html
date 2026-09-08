@@ -438,7 +438,16 @@
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script>
-        $('#myHead').load('include/header.html');
+         $('#myHead').load('include/header.html', function () {
+            // Header is loaded dynamically, so initialize the mobile menu
+            // only after .th-menu-wrapper exists in the DOM.
+            if (typeof $.fn.thmobilemenu === 'function') {
+                $('.th-menu-wrapper').thmobilemenu();
+            }
+            if (typeof initMasks === 'function') {
+                initMasks();
+            }
+        });
         $('#myFooter').load('include/footer.html');
     </script>
     <!-- Swiper Js -->
