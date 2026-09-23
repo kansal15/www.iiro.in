@@ -15062,6 +15062,7 @@ span.select2-selection.select2-selection--single:focus {
   margin-bottom: 25px;
   font-weight: 600;
   margin-top: -0.5em;
+  max-width: 400px;
 }
 
 .about-card_text {
